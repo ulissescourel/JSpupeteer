@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search with Puppeteer</title>
+    <script src="GoogleSearchPuppeteer2.js"></script>
+    <script>
+      
+(async () => {
+  const searchUrl = 'www.example.com'; // Replace with user input URL
+  const numResults = 5; // Replace with user input number of results
+  const { resultsCount, results } = await searchAndCountResults(searchUrl, numResults);
+  console.log(`Number of results: ${resultsCount}`);
+  console.log('Top results:');
+  results.forEach(result => {
+    console.log(`- ${result.title} (${result.link})`);
+  });
+})();
+
+    </script>
+</head>
+<body>
+    <h1>Google Search with Puppeteer</h1>
+    
+</body>
+</html>

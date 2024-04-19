@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search with Puppeteer</title>
+</head>
+<body>
+    <h1>Google Search with Puppeteer</h1>
+    <script src="GoogleSearchPuppeteer1.js"></script>
+    <script>
+        // Example usage:
+        const searchUrl = 'https://www.example.com'; // Replace with your desired search URL
+        const numResults = 5; // Replace with the desired number of results
+        const searchResults = searchAndCountResults(searchUrl, numResults);
+        console.log('Results Count:', searchResults.resultsCount);
+        console.log('Top Results:', searchResults.results);
+    </script>
+</body>
+</html>
